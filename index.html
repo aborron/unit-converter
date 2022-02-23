@@ -1,9 +1,47 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>index.html</h1>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <section>
+          <h1>Metric/Imperial unit conversion</h1>
+          <input
+            id="number-input"
+            type="number"
+            value="20"
+            oninput="updateValues()"
+          />
+        </section>
+        <h2>Length (Meter/Feet)</h2>
+        <p>
+          <span class="input-span"></span> meters = <span id="feet"></span> feet
+          | <span class="input-span"></span> feet =
+          <span id="meters"></span> meters
+        </p>
+
+        <h2>Volume (Liters/Gallons)</h2>
+        <p>
+          <span class="input-span"></span> liters =
+          <span id="gallons"></span> gallons |
+          <span class="input-span"></span> gallons =
+          <span id="liters"></span> liters
+        </p>
+
+        <h2>Mass (Kilograms/Pounds)</h2>
+        <p>
+          <span class="input-span"></span> kilos =
+          <span id="pounds"></span> pounds |
+          <span class="input-span"></span> pounds =
+          <span id="kilos"></span> kilos
+        </p>
+      </article>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
