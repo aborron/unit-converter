@@ -1,15 +1,20 @@
-<html>
+<!DOCTYPE html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="index.css" />
+    <title>Unit Converter</title>
   </head>
   <body>
     <main>
       <article>
-        <section>
+        <section class="conversion-section">
           <h1>Metric/Imperial unit conversion</h1>
           <input
             id="number-input"
@@ -18,28 +23,43 @@
             oninput="updateValues()"
           />
         </section>
-        <h2>Length (Meter/Feet)</h2>
-        <p>
-          <span class="input-span"></span> meters = <span id="feet"></span> feet
-          | <span class="input-span"></span> feet =
-          <span id="meters"></span> meters
-        </p>
+        <div class="wrapper flow">
+          <div>
+            <h2>Length (Meters/Feet)</h2>
+            <p>
+              <span class="input-span"></span> meters =
+              <span id="feet"></span> feet</p>
+               <span class="bar">|</span>
+               <p>
+              <span class="input-span"></span> feet =
+              <span id="meters"></span> meters
+            </p>
+          </div>
 
-        <h2>Volume (Liters/Gallons)</h2>
-        <p>
-          <span class="input-span"></span> liters =
-          <span id="gallons"></span> gallons |
-          <span class="input-span"></span> gallons =
-          <span id="liters"></span> liters
-        </p>
+          <div>
+            <h2>Volume (Liters/Gallons)</h2>
+            <p>
+              <span class="input-span"></span> liters =
+              <span id="gallons"></span> gallons</p>
+              <span class="bar">|</span>
+              <p>
+              <span class="input-span"></span> gallons =
+              <span id="liters"></span> liters
+            </p>
+          </div>
 
-        <h2>Mass (Kilograms/Pounds)</h2>
-        <p>
-          <span class="input-span"></span> kilos =
-          <span id="pounds"></span> pounds |
-          <span class="input-span"></span> pounds =
-          <span id="kilos"></span> kilos
-        </p>
+          <div>
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p>
+              <span class="input-span"></span> kilos =
+              <span id="pounds"></span> pounds</p>
+              <span class="bar">|</span>
+              <p>
+              <span class="input-span"></span> pounds =
+              <span id="kilos"></span> kilos
+            </p>
+          </div>
+        </div>
       </article>
     </main>
     <script src="index.js"></script>
