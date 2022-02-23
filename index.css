@@ -69,13 +69,13 @@ p {
   color: white;
   text-align: center;
   width: 100%;
+  background-color: hsla(238, 99%, 89%, 0.4);
+  max-width: 400px;
+  border-radius: 5px;
 }
 
 #number-input:focus {
   outline: none;
-  background-color: hsla(238, 99%, 89%, 0.4);
-  max-width: 400px;
-  border-radius: 5px;
 }
 
 .wrapper {

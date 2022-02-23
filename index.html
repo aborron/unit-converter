@@ -21,6 +21,10 @@
             type="number"
             value="20"
             oninput="updateValues()"
+            autofocus
+            onfocus="let temp = this.value;
+                     this.value = null;
+                     this.value = temp"
           />
         </section>
         <div class="wrapper flow">
