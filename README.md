@@ -1,4 +1,4 @@
-# unit-converter
+# Unit Converter
 
 [View live demo](https://confident-hermann-e53f7f.netlify.app/)
 
