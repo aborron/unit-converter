@@ -7,11 +7,16 @@ const gallons = document.getElementById("gallons")
 const pounds = document.getElementById("pounds")
 const kilos = document.getElementById("kilos")
 
+// Autofocus input field
+window.onload = () => {
+    numberInput.focus();
+}
+
 updateValues()
 
 numberInput.addEventListener("input", updateValues)
 
-// Places the insertion point at the end of the value
+// Place the insertion point at the end of the value
 numberInput.addEventListener("focus", (e) => {
     // Store the event target value in a temp variable
     let temp = e.target.value;
